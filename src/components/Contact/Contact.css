@@ -1,0 +1,148 @@
+.reservation-container {
+    padding: 2rem 0;
+}
+.reservation-form h5{
+    color: #fff;
+}
+
+.form-control {
+    padding: 13px;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.reservation-form {
+    padding: 2rem;
+    background: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color:#0F172B;
+}
+
+.reservation-form h4 {
+    font-weight: 300;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-form h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.reservation-form .form-floating {
+    margin-bottom: 1rem;
+}
+
+.reservation-form .form-control,
+.reservation-form .form-select {
+    margin-bottom: 1rem;
+}
+
+.reservation-form button {
+    background-color: #FEA116;
+    border: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    margin-left:1px;
+}
+
+.reservation-form button:hover {
+    background-color: #e69510;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.video {
+    position: relative;
+    /* height: 100%; */
+    min-height: 556px;
+    background: linear-gradient(rgba(15,23,43,.1),rgba(15,23,43,.1)),url(http://localhost:3000/static/media/video.5ccf0691b949bea7aa95.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .btn-play {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .btn-play:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    background: #FEA116;
+    border-radius: 50%;
+    animation: pulse-border 1.5s ease-out infinite;
+}
+
+.video .btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #000;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.video .btn-play:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background: #FEA116;
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .video {
+        min-height: 558px;
+        width: 100%;
+    }
+
+
+}

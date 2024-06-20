@@ -1,0 +1,75 @@
+.team_cover{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-title-part {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #FEA116;
+}
+
+.wow h1 {
+    font-weight: 700;
+}
+
+
+.card-cover {
+    height: 361px !important;
+    overflow: hidden;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: background-color 0.3s ease;
+}
+
+.card-cover:hover {
+    background-color: transparent !important;
+}
+
+.card-cover img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    width: 190px;
+    margin-bottom: 23px;
+}
+
+.card-cover h5 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    transition: color 0.3s ease;
+}
+
+.card-cover small {
+    transition: color 0.3s ease;
+}
+
+.card-cover img:hover,
+.card-cover:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.card-cover:hover h5,
+.card-cover:hover small {
+    color: #000;
+}
+
+.social-icons {
+    margin: 17px -14px;
+}
+
+.social-icons a {
+    background: #FEA116;
+    padding: 12px;
+    border-radius: 19px 19px 0 0;
+    margin: 0 10px;
+    color: #fff;
+}

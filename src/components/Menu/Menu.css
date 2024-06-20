@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu-list {
+    display: flex;
+    gap: 17px;
+    margin-left: -37px;
+    border-bottom: groove;
+    padding-bottom: 10px;}
+.menu-list li {
+    list-style: none;
+    color: #202020;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu-list-icon {
+    color: #FEA116;
+    font-size: 2rem;
+}

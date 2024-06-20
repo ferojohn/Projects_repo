@@ -1,0 +1,35 @@
+.text-start{
+    font-family: Pacifico, cursive;
+    color: #FEA116 !important;
+        position: relative;
+        display: inline-block;
+}
+.text-start::after {
+    content: '';
+    width: 52px;
+    height: 0.1rem;
+    position: absolute;
+    top: 13px;
+    gap: 2px;
+    right: -63px;
+    background: 2px solid yellow;
+    background-color: #FEA116;
+}
+
+.restorant-icon{
+    color: #FEA116;
+}
+
+.border-start{
+    border-left: 2px  #FEA116 !important;
+    color: #FEA116;
+    font-weight: 700;
+}
+.popular {
+    color: #605454;
+    font-size: 17px;
+}
+.experience-text {
+    color: #020202;
+    font-weight: 700;
+}

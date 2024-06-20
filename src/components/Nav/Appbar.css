@@ -1,0 +1,129 @@
+
+
+.main-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #0F172B;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+.main-nav-wrapper.scrolled {
+  background-color: #000;
+}
+  
+  .nav-list-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 4rem;
+    font-weight: 700;
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .nav-list li {
+    list-style: none;
+    color: #fff;
+  }
+  .nav-list li:first-child {
+    color: #FEA116;
+  }
+  .nav-list li:hover{
+    color: #FEA116;
+    transition:0.5s ease;
+  }
+
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+  .text{
+    color: #FEA116 !important;
+  }
+  
+  
+
+  .navbar-toggle{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px)
+
+   {  
+    .text{
+      margin-right: 30rem;
+    }
+    
+    .nav-list-wrapper {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #000;
+      gap: 14px;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      align-items: initial;
+      gap: 1rem;
+      margin-right: 12rem;
+  }
+
+  .book_btn{
+      margin-left: -12rem;
+  }
+
+  .main-nav-wrapper {
+    flex-direction: column;
+    background-color: #0F172B;
+    height: 60px;
+}
+
+    .nav-list-wrapper.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  
+    .btn-primary {
+      margin-top: 10px;
+    }
+
+    .navbar-toggle {
+      color: white;
+      margin-right: 0rem;
+      position: absolute;
+      top: 9px;
+      right: 25px;
+  }
+    .nav-list-wrapper.active {
+      display: flex;
+    }
+  }
+
+
+  @media screen and (max-width: 672px)
+{
+  .text{
+    margin-right: 20rem;
+  }
+}

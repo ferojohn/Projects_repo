@@ -1,0 +1,106 @@
+.wrapper {
+  display: block;
+  gap: 50px;
+}
+
+.card-body-wrapper {
+  display: flex;
+  margin-left: 31px;
+  gap: 4px;
+  align-items: center;
+}
+
+.img-container img {
+  width: 57px;
+  border-radius: 50%;
+}
+
+.card_col {
+  margin-right: 22px;
+  width: 96% !important;
+  height: 225px !important;
+  padding: 6px;
+}
+
+.card_col:hover {
+  background-color: none !important;
+}
+
+.card_col a {
+  color: rgb(253 148 17);
+  text-decoration: underline;
+  font-size: 26px;
+  margin-right: 16rem;
+}
+
+.card-title {
+  margin-bottom: 0px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+
+  display: none;
+}
+
+.slick-prev:before {
+  display: none;
+
+}
+
+.slick-track {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+
+.slick-slide {
+  outline: none;
+  width: 371px;
+  text-align: center;
+
+}
+
+
+
+.slick-slide.slick-current {
+  position: relative;
+  z-index: 1;
+}
+
+.slick-slide.slick-current .card_col {
+  background-color: #FEA116;
+  color: #fff;
+}
+
+.slick-slide.slick-current .card_col a,
+.slick-slide.slick-current .card_col .card-text {
+  color: white;
+
+}
+
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 17px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #FEA116;
+}
+
+@media screen and (max-width:768px){
+ 
+}
